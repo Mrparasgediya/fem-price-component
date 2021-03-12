@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <style>
+      .attribution {
+        margin-top: 1.5rem;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img
+      class="background-pattern"
+      src="./images/bg-pattern.svg"
+      alt="app-background"
+    />
+    <div class="main-heading">
+      <h1 class="main-heading__heading">Simple, traffic-based pricing</h1>
+      <p class="main-heading__sub-text">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+      <img
+        src="./images/pattern-circles.svg"
+        class="main-heading__circles-pattern"
+        alt=""
+      />
+    </div>
+    <div class="background-bar"></div>
+    <div class="container">
+      <div class="container-top">
+        <div class="header">
+          <div class="header__views-count">100k pageviews</div>
+          <div class="progress-bar">
+            <div class="progress-bar-line">
+              <span class="progress-bar-line__progress"></span>
+              <div class="progress-bar__thumb">
+                <img src="./images/icon-slider.svg" alt="slider-icon" />
+              </div>
+            </div>
+          </div>
+          <div class="header-price-info">
+            <div class="header-price-info__price">$16.00</div>
+            <div class="header-price-info__month">/ month</div>
+          </div>
+        </div>
+
+        <div class="billing">
+          <div class="billing-info">
+            <div class="billing-info__label">monthly billing</div>
+            <div class="toggle-switch">
+              <input
+                type="checkbox"
+                class="toggle-switch__checkbox"
+                name="monthly billing"
+              />
+              <div class="toggle-switch__circle"></div>
+            </div>
+          </div>
+          <div class="billing-info">
+            <div class="billing-info__label">yearly billing</div>
+            <div class="billing-info__discount">
+              <span class="billing-info__discount-percentage">25%</span>
+              <span class="billing-info__discount-text">discount</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-bottom">
+        <ul class="service-list">
+          <li class="service-list__item">Unlimited websites</li>
+          <li class="service-list__item">100% data ownership</li>
+          <li class="service-list__item">Email reports</li>
+        </ul>
+        <button class="button">Start my trial</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Mrparasgediya">Paras Gediya</a>.
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

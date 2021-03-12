@@ -1,0 +1,33 @@
+.container {
+  height: 53rem;
+  width: 72.5rem;
+  margin: 12.5rem auto 0;
+  background-color: $white;
+  box-shadow: 0 0 1.5rem 1rem $light-grayish-blue-bar;
+  border-radius: 1rem;
+
+  &-top,
+  &-bottom {
+    padding: 5rem;
+  }
+  &-top {
+    border-bottom: 1px solid $light-grayish-blue-bar;
+  }
+  &-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: min-content;
+    &-bottom {
+      flex-direction: column;
+      gap: 4rem;
+      padding: 3.5rem;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.toggle-switch {
+  height: 3rem;
+  width: 5.5rem;
+  padding: 0.5rem;
+  border-radius: 2.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: $pale-blue;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+
+  &--active {
+    justify-content: flex-end;
+    background-color: $strong-cayan;
+  }
+  &__checkbox {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  &__circle {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: $white;
+  }
+}

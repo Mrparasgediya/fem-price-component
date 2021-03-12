@@ -1,0 +1,17 @@
+.button {
+  font-size: 1.4rem;
+  height: 5.5rem;
+  width: 22.5rem;
+  border-radius: 2.5rem;
+  background-color: $dark-blue;
+  color: $white;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}

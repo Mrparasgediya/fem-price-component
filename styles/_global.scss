@@ -1,0 +1,30 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.background-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .background-pattern {
+    height: 50vh;
+  }
+}
